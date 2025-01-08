@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-text: #cdc6c3;
+  --hover-color: #70efbf;
+  --neon-box-shadow: 0 0 0.5rem #70efbf;
+  --index: calc(1vw + 1vh);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url("../../assets/image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  padding: 20px 12%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--hover-color);
+}
+
+.logo img {
+  max-width: 100%;
+  width: 40px;
+  height: auto;
+}
+
+header .navlist {
+  display: flex;
+}
+
+.navlist li {
+  margin: 0 1.5rem;
+}
+
+.navlist li .nav-item {
+  position: relative;
+  padding: 17px 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.navlist li .nav-item:hover {
+  color: var(--hover-color);
+}
+
+.navlist li .nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: var(--hover-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.navlist li .nav-item:hover::before {
+  width: 100%;
+}
+
+.navlist li .active {
+  color: var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.deedadbtn {
+  background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.deedadbtn:hover {
+  background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
+  box-shadow: 0 3px 9px #25b981;
+}
+
+#menu-icon {
+  color: var(--hover-color);
+  font-size: 2.5rem;
+}
