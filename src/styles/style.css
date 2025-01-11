@@ -122,4 +122,56 @@ header .navlist {
 #menu-icon {
   color: var(--hover-color);
   font-size: 2.5rem;
+  display: none;
+}
+
+section {
+  padding: 100px 12%;
+}
+
+.home-img img.hero {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+.eart-rotate {
+  width: 100%;
+}
+
+.earth-rotate img.earth {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: calc(var(--index) * 45);
+  animation: rotate 300s linear infinite;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  color: #ffffff;
+  width: 100%;
+}
+
+.home-text h1,
+h2 {
+  font-size: calc(var(--index) * 2);
+  margin-bottom: 2rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #474747;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
