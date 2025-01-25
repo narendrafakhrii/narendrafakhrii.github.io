@@ -68,6 +68,7 @@ header {
   max-width: 100%;
   width: 44px;
   height: auto;
+  filter: drop-shadow(0 0 0.5rem #1797ff);
 }
 
 header .navlist {
@@ -325,6 +326,43 @@ img.moon-light {
 
 .text-subject .subject-btn a {
   margin-top: 1rem;
+}
+
+/** Header Sticky CSS */
+
+header.sticky {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 12%;
+  border-bottom: 1px solid #3e0e62;
+}
+
+/** scroll animation */
+
+.scroll-left {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.scroll-right {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.scroll-top {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.scroll-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show-items {
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateX(0);
+  transition: all 2s;
 }
 
 @keyframes rotate {

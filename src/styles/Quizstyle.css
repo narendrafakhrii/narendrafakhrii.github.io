@@ -1,4 +1,5 @@
 /* Reset dasar */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,17 +8,22 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f3f4f6;
+  background-image: url(../../assets/image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .quiz-container {
-  background: #fff;
+  background-image: url(../../assets/image/cardBg.jpg);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 90%;
   text-align: center;
+  color: #fff;
+  filter: drop-shadow(0 0 0.5rem #1797ff);
 }
 
 h1 {
@@ -57,28 +63,54 @@ h1 {
 #feedback {
   font-size: 1rem;
   margin: 20px 0;
-  color: #555;
+  color: #fff;
 }
 
 #timer {
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
   margin: 20px 0;
 }
 
 #next-button {
-  background-color: #17a2b8;
-  color: white;
+  background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
+  color: #000;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 0px 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
 #next-button:hover {
-  background-color: #138496;
+  background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
+  box-shadow: 0 3px 9px #25b981;
+}
+
+.back-button {
+  background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
+  color: #000;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+  padding: 0px 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Jarak dengan elemen di atasnya */
+}
+
+.back-button:hover {
+  background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
+  box-shadow: 0 3px 9px #25b981;
 }
 
 /* Efek animasi */
@@ -109,5 +141,17 @@ h1 {
   to {
     opacity: 0;
     transform: translateY(-20px);
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

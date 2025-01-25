@@ -159,6 +159,14 @@ function showResults() {
       ? "Good job! Keep practicing and you'll get even better! 👍"
       : "Don't worry! Keep learning and never give up! 💪";
   feedbackElement.textContent += `\n${message}`;
+
+  const backButton = document.createElement("button");
+  backButton.textContent = "Back to Homepage";
+  backButton.classList.add("back-button");
+  backButton.addEventListener("click", () => {
+    window.location.href = "../index.html"; // Ganti "index.html" dengan halaman utama Anda
+  });
+  optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }
 
 // Load soal pertama
