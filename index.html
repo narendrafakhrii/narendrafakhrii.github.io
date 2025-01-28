@@ -11,19 +11,21 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
 
-    <title>Deedad</title>
+    <title translate="no">Deedad</title>
   </head>
   <body>
     <!--* Header -->
     <header>
-      <a href="#" class="logo"
+      <a href="#" class="logo" translate="no"
         ><img src="./assets/image/logo.png" alt="logo" />Deedad</a
       >
       <ul class="navlist">
-        <li class="liLink"><a href="#home" class="nav-item active">Home</a></li>
+        <li class="liLink">
+          <a href="#home" class="nav-item active" id="home-link">Home</a>
+        </li>
         <li class="liLink"><a href="#quiz" class="nav-item">Quiz</a></li>
         <li class="liLink">
-          <a href="#subject" class="nav-item">Questionnaire</a>
+          <a href="#poll" class="nav-item" id="poll-link">Questionnaire</a>
         </li>
         <!--<li class="liLink">
           <a href="#document" class="nav-item">Document</a>
@@ -40,8 +42,8 @@
     <!--* Home Section-->
     <section id="home" class="home">
       <div class="home-text scroll-left">
-        <h1><span>Deedad : </span>English</h1>
-        <h2>Getway To The Stars</h2>
+        <h1><span>Deedad : </span>Quiz</h1>
+        <h2>Getway To English Expert</h2>
         <!-- <a href="#" class="deedadBtn">Join With Us</a> -->
       </div>
 
@@ -63,7 +65,7 @@
             <img src="./assets/image/neptune.png" alt="" />
             <h2>Level 1</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectur adispicing elit. Autem, at.
+              In level 1, it contains English questions that are certainly easy
             </p>
             <a href="./page/Quiz.html" class="deedadBtn">Start</a>
           </div>
@@ -73,9 +75,7 @@
           <div class="planet-img">
             <img src="./assets/image/mars.png" alt="" />
             <h2>Level 2</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectur adispicing elit. Autem, at.
-            </p>
+            <p>At level 2, the difficulty increases but is still easy</p>
             <a href="./page/Quiz2.html" class="deedadBtn">Start</a>
           </div>
         </div>
@@ -84,9 +84,7 @@
           <div class="planet-img">
             <img src="./assets/image/mercury.png" alt="" />
             <h2>Level 3</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectur adispicing elit. Autem, at.
-            </p>
+            <p>At level 3, English questions are already difficult.</p>
             <a href="./page/Quiz3.html" class="deedadBtn">Start</a>
           </div>
         </div>
@@ -95,9 +93,7 @@
           <div class="planet-img">
             <img src="./assets/image/uranus.png" alt="" />
             <h2>Level 4</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectur adispicing elit. Autem, at.
-            </p>
+            <p>At level 4, this is the highest level and the most difficult.</p>
             <a href="./page/Quiz4.html" class="deedadBtn">Start</a>
           </div>
         </div>
@@ -105,7 +101,7 @@
     </section>
     <!--* End Quiz Section-->
     <!--* Subject section-->
-    <section id="subject" class="subject">
+    <section id="poll" class="subject">
       <div class="img-subject scroll-left">
         <div class="circle-animate">
           <span style="--i: 0"></span>
@@ -116,8 +112,8 @@
         <img src="./assets/image/Spaceship.png" alt="" />
       </div>
       <div class="text-subject scroll-right">
-        <h3>Questionnaire</h3>
-        <p>
+        <h3 id="questionnaire-title">Questionnaire</h3>
+        <p id="questionnaire-text">
           Thank you for your feedback. It helps us improve our services. We
           value your input and are committed to continuous improvement. Please
           fill out the questionnaire honestly. Thank you!
@@ -126,6 +122,7 @@
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfXnHS8ACnCm5DIApUs8m09yqzJuUpc6DMWx4-a-AcMsRk0Nw/viewform?vc=0&c=0&w=1&flr=0"
             class="deedadBtn"
+            target="_blank"
             >Start</a
           >
         </div>

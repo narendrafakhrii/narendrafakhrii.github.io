@@ -1,53 +1,84 @@
 const questions = [
   {
-    question: "What is the past tense of 'go'?",
-    options: ["goed", "went", "gone", "go"],
-    answer: 1,
-  },
-  {
-    question: "Which is a synonym for 'happy'?",
-    options: ["sad", "joyful", "angry", "tired"],
-    answer: 1,
-  },
-  {
-    question: "What is the plural form of 'child'?",
-    options: ["childs", "children", "childes", "child"],
-    answer: 1,
-  },
-  {
-    question: "Which word is a noun?",
-    options: ["run", "blue", "cat", "quickly"],
+    question: "Which of the following is a countable noun?",
+    options: ["Water", "Sugar", "Apple", "Air"],
     answer: 2,
   },
   {
-    question: "What is the opposite of 'cold'?",
-    options: ["hot", "warm", "cool", "freeze"],
-    answer: 0,
-  },
-  {
-    question: "Which is an adjective?",
-    options: ["quick", "run", "happily", "cat"],
-    answer: 0,
-  },
-  {
-    question: "What is the past tense of 'eat'?",
-    options: ["eated", "ate", "eaten", "eat"],
+    question: "What is the comparative form of 'good'?",
+    options: ["Gooder", "Better", "Best", "More good"],
     answer: 1,
   },
   {
-    question: "What is the synonym of 'small'?",
-    options: ["big", "tiny", "large", "huge"],
-    answer: 1,
+    question: "Choose the correct passive form: 'She writes a letter.'",
+    options: [
+      "A letter is written by her.",
+      "A letter wrote by her.",
+      "A letter writes by her.",
+      "A letter was written by her.",
+    ],
+    answer: 0,
   },
   {
-    question: "What is the antonym of 'fast'?",
-    options: ["quick", "speedy", "slow", "rapid"],
+    question: "Which sentence is in the present perfect tense?",
+    options: [
+      "She goes to school every day.",
+      "She went to school.",
+      "She has gone to school.",
+      "She is going to school.",
+    ],
     answer: 2,
   },
   {
-    question: "Which is a verb?",
-    options: ["run", "blue", "happy", "tall"],
+    question:
+      "What is the correct order of adjectives in this sentence? 'She bought a ___ dress.'",
+    options: [
+      "red beautiful long",
+      "long red beautiful",
+      "beautiful long red",
+      "beautiful red long",
+    ],
+    answer: 2,
+  },
+  {
+    question: "Which word is an adverb?",
+    options: ["Quickly", "Happy", "Beautiful", "Strong"],
     answer: 0,
+  },
+  {
+    question: "Which of the following sentences uses a conditional clause?",
+    options: [
+      "She is reading a book.",
+      "If it rains, we will stay inside.",
+      "I like pizza.",
+      "He went to the market.",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Choose the correct indirect speech: 'He said, \"I am happy.\"'",
+    options: [
+      "He said he was happy.",
+      "He said he is happy.",
+      "He said he has been happy.",
+      "He said he had happy.",
+    ],
+    answer: 0,
+  },
+  {
+    question: "Which of the following is a gerund?",
+    options: ["Running", "Run", "Ran", "Runs"],
+    answer: 0,
+  },
+  {
+    question: "Which sentence is in the future continuous tense?",
+    options: [
+      "She will eat lunch.",
+      "She will be eating lunch.",
+      "She is eating lunch.",
+      "She eats lunch.",
+    ],
+    answer: 1,
   },
 ];
 
