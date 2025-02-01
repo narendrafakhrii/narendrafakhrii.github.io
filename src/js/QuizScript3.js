@@ -125,7 +125,7 @@ function loadQuestion() {
 }
 
 function startCountdown() {
-  let timeLeft = 10;
+  let timeLeft = 30;
   countdownElement.textContent = timeLeft;
 
   clearInterval(timer);

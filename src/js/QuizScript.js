@@ -1,83 +1,74 @@
 const questions = [
   {
-    question: "Which of the following is a countable noun?",
-    options: ["Water", "Sugar", "Apple", "Air"],
-    answer: 2,
-  },
-  {
-    question: "What is the comparative form of 'good'?",
-    options: ["Gooder", "Better", "Best", "More good"],
-    answer: 1,
-  },
-  {
-    question: "Choose the correct passive form: 'She writes a letter.'",
-    options: [
-      "A letter is written by her.",
-      "A letter wrote by her.",
-      "A letter writes by her.",
-      "A letter was written by her.",
-    ],
+    question:
+      "The Purpose of narrative text is ....... the reader with a story",
+    options: ["to amuse", "to inform", "to disrupt", "to advise"],
     answer: 0,
   },
   {
-    question: "Which sentence is in the present perfect tense?",
-    options: [
-      "She goes to school every day.",
-      "She went to school.",
-      "She has gone to school.",
-      "She is going to school.",
-    ],
+    question: "Fairy tales is story which relates much with ....things.",
+    options: ["place", "belief", "magic", "nature"],
     answer: 2,
   },
   {
     question:
-      "What is the correct order of adjectives in this sentence? 'She bought a ___ dress.'",
+      "Complete the dialog below by selecting the correct answer! \n \nFerdi: Next week, we're on holiday. So, Rosa, what are you going to do on your holiday? \n Rosa:..",
     options: [
-      "red beautiful long",
-      "long red beautiful",
-      "beautiful long red",
-      "beautiful red long",
+      "I don't know where I'm going.",
+      "This is not your business.",
+      "I have nothing to do.",
+      "I'm thinking of going to Bali.",
+    ],
+    answer: 3,
+  },
+  {
+    question:
+      "Select the most appropriate answer to complete the sentence! \n .....it's so important to teach children from an early age to be independent and responsible!",
+    options: [
+      "He totally understands",
+      "Do you think that",
+      "In my opinion",
+      "You can't believe",
     ],
     answer: 2,
   },
   {
-    question: "Which word is an adverb?",
-    options: ["Quickly", "Happy", "Beautiful", "Strong"],
-    answer: 0,
-  },
-  {
-    question: "Which of the following sentences uses a conditional clause?",
-    options: [
-      "She is reading a book.",
-      "If it rains, we will stay inside.",
-      "I like pizza.",
-      "He went to the market.",
-    ],
+    question: "My Brother lives .....Bandung",
+    options: ["At", "In", "On", "Within"],
     answer: 1,
   },
   {
-    question: "Choose the correct indirect speech: 'He said, \"I am happy.\"'",
-    options: [
-      "He said he was happy.",
-      "He said he is happy.",
-      "He said he has been happy.",
-      "He said he had happy.",
-    ],
+    question: "The party will be held .......Sunday, June 18, at 08.00 pm.",
+    options: ["At", "To", "On", "In"],
+    answer: 2,
+  },
+  {
+    question:
+      "Nadia told ....that you would like to have more pen pals from Japan.",
+    options: ["Me", "I", "My", "Mine"],
     answer: 0,
   },
   {
-    question: "Which of the following is a gerund?",
-    options: ["Running", "Run", "Ran", "Runs"],
+    question:
+      "Manaan has several pen pals from India. He writes to ..... via email every week.",
+    options: ["Them", "They", "Their", "Theirs"],
     answer: 0,
   },
   {
-    question: "Which sentence is in the future continuous tense?",
+    question:
+      "My friends and I often spend long vacations in our hometowns. .... through email and Whatsapp.",
     options: [
-      "She will eat lunch.",
-      "She will be eating lunch.",
-      "She is eating lunch.",
-      "She eats lunch.",
+      "I keep in touch",
+      "They keep in touch",
+      "She keep in touch",
+      "We keep in touch",
     ],
+    answer: 3,
+  },
+  {
+    question:
+      "Yafa often tells Yafi about her rehearsal. .....joins a choir club in her school.?",
+    options: ["She", "He", "His", "Her"],
     answer: 1,
   },
 ];
@@ -115,7 +106,7 @@ function loadQuestion() {
 }
 
 function startCountdown() {
-  let timeLeft = 10;
+  let timeLeft = 30;
   countdownElement.textContent = timeLeft;
 
   clearInterval(timer);
@@ -200,5 +191,5 @@ function showResults() {
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }
 
-// Load soal pertama
+// Load soal
 loadQuestion();

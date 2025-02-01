@@ -266,9 +266,9 @@ img.moon-light {
   font-weight: 700;
 }
 
-/** Subject CSS */
+/** Questionnaire CSS */
 
-.subject {
+.questionnaire {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -276,7 +276,7 @@ img.moon-light {
   gap: 1rem;
 }
 
-.img-subject {
+.img-questionnaire {
   position: relative;
   width: 600px;
 }
@@ -304,27 +304,27 @@ img.moon-light {
   animation-delay: calc(1s * var(--i));
 }
 
-.img-subject img {
+.img-questionnaire img {
   width: 200px;
   height: auto;
   animation: floatImg 4s ease-in-out infinite;
 }
 
-.text-subject {
+.text-questionnaire {
   color: #fff;
 }
 
-.text-subject h3 {
+.text-questionnaire h3 {
   font-size: 2.5rem;
   text-shadow: 2px 1px 1px #474747;
 }
 
-.text-subject p {
+.text-questionnaire p {
   margin: 1rem auto;
   line-height: 2rem;
 }
 
-.text-subject .subject-btn a {
+.text-questionnaire .questionnaire-btn a {
   margin-top: 1rem;
 }
 
@@ -363,6 +363,56 @@ header.sticky {
   transform: translateX(0);
   transform: translateX(0);
   transition: all 2s;
+}
+/* Menambahkan meteor dengan posisi absolut */
+.meteor {
+  position: absolute;
+  width: 30px; /* Sesuaikan ukuran meteor */
+  height: 30px; /* Sesuaikan ukuran meteor */
+  background-image: url("../../assets/image/logo.png"); /* Ganti dengan gambar meteor */
+  background-size: cover;
+  animation: meteor 10s linear infinite;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* Mengatur posisi dan kecepatan meteor */
+.meteor1 {
+  top: 10%;
+  left: -30px;
+  animation-duration: 12s;
+}
+.meteor2 {
+  top: 40%;
+  left: -50px;
+  animation-duration: 14s;
+}
+.meteor3 {
+  top: 70%;
+  left: -80px;
+  animation-duration: 9s;
+}
+
+.meteor4 {
+  top: 20%;
+  left: -100px;
+  animation-duration: 7s;
+}
+
+.meteor5 {
+  top: 50%;
+  left: -120px;
+  animation-duration: 5s;
+}
+
+/* Animasi bergerak meteor dari kiri ke kanan */
+@keyframes meteor {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100vw) translateY(100vh);
+  }
 }
 
 @keyframes rotate {

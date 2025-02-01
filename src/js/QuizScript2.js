@@ -1,93 +1,72 @@
 const questions = [
   {
-    question: "Which sentence uses the correct past perfect tense?",
+    question: "These are sentences to ask for an opinion,EXCEPT….",
     options: [
-      "He has gone to the store before it closed.",
-      "He had gone to the store before it closed.",
-      "He gone to the store before it closed.",
-      "He had go to the store before it closed.",
+      "What do you think about hiring a taxi?",
+      "OK, but let me ask my mom first.",
+      "Do you mind if i ride it?",
+      "So, what's your idea?.",
     ],
     answer: 1,
   },
   {
-    question: "Identify the sentence written in the future continuous tense.",
+    question: "Rafi and Mafaza get new chance, ...",
+    options: ["Doesn't they?", "Aren't they?", "Do they?", "Don't they?"],
+    answer: 3,
+  },
+  {
+    question: "Jakarta is still our capital, ........?",
+    options: ["Is it", "Does it", "Isn,t it", "Don,t it"],
+    answer: 2,
+  },
+  {
+    question: "She could write beautiful poems, ...........?",
+    options: ["Could She", "Couldn't she", "Can She", "Can't she"],
+    answer: 1,
+  },
+  {
+    question: "The bicycle is not here anymore; it must have....",
+    options: ["took away", "taken away", "been taking away", "been taken away"],
+    answer: 3,
+  },
+  {
+    question:
+      "Buyer : I want the toy car displayed in the window yesterday. \n Shopkeeper: I'm sorry, it ......",
+    options: ["has sold", "has been sold", "had been selling", "had sold"],
+    answer: 1,
+  },
+  {
+    question:
+      "Our house will................by our neighbour when we are away.",
+    options: ["Kept", "Be kept", "Keeping", "Be keeping"],
+    answer: 1,
+  },
+  {
+    question:
+      "Fikry: The river is very dirty. People shouldn't have thrown household rubbish into the river. \n Ahmad: That's exactly what I think. \n From the dialogue above, we know that ...",
     options: [
-      "I will be reading a book at 8 PM.",
-      "I read a book every evening.",
-      "I was reading a book when you called.",
-      "I have read that book already.",
+      "People polluted the river with rubbish.",
+      "Waste material has not been collected.",
+      "Fikry warned people not to throw rubbish.",
+      "Fikry thinks exactly the same way.",
     ],
     answer: 0,
   },
   {
     question:
-      "Choose the correct form to complete the sentence: 'By the time she arrived, we ______ eating.'",
-    options: ["had finished", "were finishing", "finish", "will finish"],
-    answer: 0,
-  },
-  {
-    question: "Which sentence uses the subjunctive mood correctly?",
+      "Ria: It's break time. ................. a cup of tea? \n Deni: That would be very nice of you.",
     options: [
-      "If he was here, he would help.",
-      "If he were here, he would help.",
-      "If he is here, he will help.",
-      "If he will be here, he would help.",
+      "Could you help me to get",
+      "Shall I have",
+      "May I offer help to get",
+      "Would you like me to get you",
     ],
-    answer: 1,
+    answer: 3,
   },
   {
-    question: "Select the grammatically correct sentence.",
-    options: [
-      "She don't have no money left.",
-      "She doesn’t have any money left.",
-      "She doesn’t have no money left.",
-      "She not have any money left.",
-    ],
-    answer: 1,
-  },
-  {
-    question: "What is the correct past participle of 'shrink'?",
-    options: ["shrank", "shrunk", "shrinked", "shrinks"],
-    answer: 1,
-  },
-  {
-    question: "Which sentence uses passive voice correctly?",
-    options: [
-      "The book was wrote by an unknown author.",
-      "The book was written by an unknown author.",
-      "The book wrote by an unknown author.",
-      "The book is wrote by an unknown author.",
-    ],
-    answer: 1,
-  },
-  {
-    question: "Choose the correct sentence using conditional type 3.",
-    options: [
-      "If I had studied harder, I would have passed the test.",
-      "If I study harder, I will pass the test.",
-      "If I studied harder, I would pass the test.",
-      "If I had studied harder, I will pass the test.",
-    ],
-    answer: 0,
-  },
-  {
-    question: "Which of the following contains an example of a gerund?",
-    options: [
-      "Running is a good form of exercise.",
-      "He runs every morning.",
-      "He has run three marathons.",
-      "He ran to the store quickly.",
-    ],
-    answer: 0,
-  },
-  {
-    question: "Identify the sentence with correct parallel structure.",
-    options: [
-      "She enjoys hiking, to swim, and cycling.",
-      "She enjoys hiking, swimming, and cycling.",
-      "She enjoys to hike, swimming, and to cycle.",
-      "She enjoys hiking, swimming, and to cycle.",
-    ],
+    question:
+      "The heat causes deeper water to boil much more violently.\nThe heat creates jets of steam and fountains of hot water.\n----------\nThe appropriate conjunction to combine the sentences is ....",
+    options: ["but", "and", "so that", "either"],
     answer: 1,
   },
 ];
@@ -125,7 +104,7 @@ function loadQuestion() {
 }
 
 function startCountdown() {
-  let timeLeft = 10;
+  let timeLeft = 30;
   countdownElement.textContent = timeLeft;
 
   clearInterval(timer);
