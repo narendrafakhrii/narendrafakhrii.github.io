@@ -1,45 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
   const pinballs = document.querySelectorAll(".pinball");
 
-  pinballs.forEach((pinball) => {
-    // Set initial position and speed of each pinball
-    let xPos = Math.random() * (window.innerWidth - pinball.offsetWidth); // Random horizontal position
-    let yPos = Math.random() * (window.innerHeight - pinball.offsetHeight); // Random vertical position
-    let xSpeed = 2 + Math.random() * 2; // Speed for horizontal movement
-    let ySpeed = 2 + Math.random() * 2; // Speed for vertical movement
+  pinballs.forEach((pinball, index) => {
+    // Mengatur posisi awal dan kecepatan setiap pinball
+    let xPos = Math.random() * (window.innerWidth - pinball.offsetWidth); // Posisi horizontal acak
+    let yPos = Math.random() * (window.innerHeight - pinball.offsetHeight); // Posisi vertikal acak
+    let xSpeed = 2 + Math.random() * 2; // Kecepatan untuk gerakan horizontal
+    let ySpeed = 2 + Math.random() * 2; // Kecepatan untuk gerakan vertikal
 
-    // Initial direction
+    // Arah awal
     let directionX = 1;
     let directionY = 1;
 
-    // Set initial position on the screen
+    // Mengatur posisi awal di layar
     pinball.style.left = `${xPos}px`;
     pinball.style.top = `${yPos}px`;
 
-    // Move meteor in a loop
-    function moveMeteor() {
-      // Check for collisions with the edges of the screen
+    // Menggerakkan pinball dalam loop
+    function movePinball() {
+      // Memeriksa tabrakan dengan tepi layar
       if (xPos + pinball.offsetWidth >= window.innerWidth || xPos <= 0) {
-        directionX *= -1; // Reverse horizontal direction
+        directionX *= -1; // Membalik arah horizontal
       }
       if (yPos + pinball.offsetHeight >= window.innerHeight || yPos <= 0) {
-        directionY *= -1; // Reverse vertical direction
+        directionY *= -1; // Membalik arah vertikal
       }
 
-      // Update positions based on direction
+      // Memeriksa tabrakan dengan pinball lainnya
+      pinballs.forEach((otherPinball, otherIndex) => {
+        if (index !== otherIndex) {
+          const otherXPos = parseFloat(otherPinball.style.left);
+          const otherYPos = parseFloat(otherPinball.style.top);
+          const distance = Math.sqrt(
+            Math.pow(xPos - otherXPos, 2) + Math.pow(yPos - otherYPos, 2)
+          );
+
+          if (distance < pinball.offsetWidth) {
+            directionX *= -1; // Membalik arah horizontal
+            directionY *= -1; // Membalik arah vertikal
+          }
+        }
+      });
+
+      // Memperbarui posisi berdasarkan arah
       xPos += xSpeed * directionX;
       yPos += ySpeed * directionY;
 
-      // Set the new position of the pinball
+      // Mengatur posisi baru pinball
       pinball.style.left = `${xPos}px`;
       pinball.style.top = `${yPos}px`;
 
-      // Repeat the animation
-      requestAnimationFrame(moveMeteor);
+      // Mengulangi animasi
+      requestAnimationFrame(movePinball);
     }
 
-    // Start moving the pinball
-    moveMeteor();
+    // Memulai menggerakkan pinball
+    movePinball();
   });
 });
 

@@ -364,12 +364,12 @@ header.sticky {
   transform: translateX(0);
   transition: all 2s;
 }
-/* Menambahkan meteor dengan posisi absolut */
+/* Meteor Mafaza */
 .meteor {
   position: absolute;
-  width: 30px; /* Sesuaikan ukuran meteor */
-  height: 30px; /* Sesuaikan ukuran meteor */
-  background-image: url("../../assets/image/logo.png"); /* Ganti dengan gambar meteor */
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/image/logo.png");
   background-size: cover;
   animation: meteor 10s linear infinite;
   opacity: 0.8;
